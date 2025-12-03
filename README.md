@@ -1,5 +1,5 @@
 # whatsapp-bot-for-tickets
-Very first whatsapp bot ever made by myself. Little only for this API: https://github.com/briankalid/Ticket-service/tree/dev
+Project meant only for this API: https://github.com/briankalid/Ticket-service/tree/dev
 This tool did most of the work: https://bot-whatsapp.netlify.app/
 
 --------------------------
@@ -29,16 +29,27 @@ Ahora responde las siguientes preguntas de esta manera
 
 
 ┌  Vamos a crear un  Chatbot  ✨
+
 │
+
 ◇  ¿Quieres continuar?
+
 │  Yes
+
 │
+
 ◇  ¿Cuál proveedor de whatsapp quieres utilizar?
+
 │  Whatsapp-web.js
+
 │ 
+
 ◇  ¿Cuál base de datos quieres utilizar?
+
 │  Memory
+
 └
+
 
 finalmente, descarga el archivo app.js de este repositorio y reemplazalo por el que está en el bot, ahora ejecuta las lineas sudo systemctl start nginx && npm start y inicia seción con el QR de whatsapp de
 tu celular (provisionalmente).
