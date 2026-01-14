@@ -11,7 +11,7 @@ Antes de adentrarnos en la instalación, necesitarás instalar previamente las h
 ----------
 Primero que nada, es necesario instalar exitosamente la API y base de datos de el siguiente proyecto, siguiendo el proceso de instalación: https://github.com/briankalid/Ticket-service/tree/dev
 
-Deberás ejecutar el API por lo menos una vez estando dentro de la carpeta del repositorio descargado. Primero, estando en la carpeta del repositorio, crea un contenedor con el siguiente comando: sudo ```docker run -d --name my-postgresdb-container12 -p 5433:5432 my-postgres-db```, tal como se muestra en la documentación de https://github.com/briankalid/Ticket-service/tree/dev.
+Deberás ejecutar el API por lo menos una vez estando dentro de la carpeta del repositorio descargado. Primero, estando en la carpeta del repositorio, crea un contenedor con el siguiente comando: sudo ```docker run -d --name my-postgresdb-container1 -p 5433:5432 my-postgres-db```, tal como se muestra en la documentación de https://github.com/briankalid/Ticket-service/tree/dev.
 
 Posteriormente activa el enviroment de python, si no lo has creado, busca requirements.txt y ejecuta ```python -m venv venv
 source venv/bin/activate pip install requirements.txt```
