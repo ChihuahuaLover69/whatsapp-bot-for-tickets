@@ -23,8 +23,10 @@ source venv/bin/activate pip install requirements.txt```. En caso de ya haberlo 
 Finalmente, estando en la carpeta src, ejecuta ```uvicorn main:app --reload``` para encender el sistema de tickets.
 
 Si al introducir http://127.0.0.1:8000/docs#/ en tu navegador ves una UI similar a esta:
+
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/09b36a9a-4584-4845-a207-137634453a4b" />
-felicidades, seguiste los pasos correctamente.
+
+### felicidades, seguiste los pasos correctamente!
 
 # Ahora con la parte del bot
 
