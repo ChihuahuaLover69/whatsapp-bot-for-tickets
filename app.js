@@ -23,14 +23,9 @@ async function httpGetAsync(theUrl) {
   const data = await response.json();
   return data;
 }
-function esperar() {
-  const segundos = Math.random() * 2;
-  console.log("vas a esperar" + segundos + "segundos");
-  return new Promise(resolve => {
-    setTimeout(resolve, segundos * 100);
-  });
+
   
-}
+
 
 const { createBot, createProvider, createFlow, addKeyword } = require('@bot-whatsapp/bot')
 
@@ -83,9 +78,9 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
 )
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
-	.addAction((async() => {
-    await esperar}))
-    .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
+	.addAction(esperar())
+    .addAnswer('🙌 Hola bienvenido a este *Chatbot*',
+    { delay: Math.random()*100 })
     .addAnswer(
         [
             'te comparto los siguientes links de interes sobre el proyecto',
@@ -96,7 +91,7 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         null,
         null,
         [flowDocs, flowGracias, flowTuto, flowDiscord]
-    )
+    ), { delay: Math.random()*100 }
     .addAction(async (ctx) => {
     try {
         const respuesta = await httpGetAsync("http://127.0.0.1:8000/v1/login");//http://127.0.0.1:8000/v1/ticket/14e3ba77-9656-4ade-b04b-5fe84a7f707e
