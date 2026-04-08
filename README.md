@@ -3,7 +3,7 @@ Project meant only for this API: https://github.com/briankalid/Ticket-service/tr
 This tool did most of the work: https://bot-whatsapp.netlify.app/
 ----
 
-Como ya se mencionó, este bot de whatsapp parte de la plantilla creada por netlify: https://bot-whatsapp.netlify.app/ . Que posteriormente se modificó para cumplir las necesidades del proyecto.
+Como ya se mencionó, este bot de whatsapp parte de la plantilla creada por codigoencasa: https://bot-whatsapp.netlify.app/ . Que posteriormente se modificó para cumplir las necesidades del proyecto.
 
 Antes de adentrarnos en la instalación, necesitarás instalar previamente las herramientas: nginx, uvicorn y chrome ó chromium (El bot está pensado unicamente para estos navegadores). Además de un entendimiento básico de JS y haber instalado npm y docker entre otras herramientas particulares para la API. Tambien es esperable que se necesite instalar eslint mediante npm
 
